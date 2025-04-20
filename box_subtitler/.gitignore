@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.env
+
+# Streamlit generated files
+audio.mp3
+*.srt
+
+# VSCode / IDEs
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
