@@ -1,0 +1,23 @@
+
+1. Go to the official MySQL website:
+https://dev.mysql.com/downloads/installer/
+
+2. Download the "MySQL Installer for Windows" (full or web installer version).
+
+3. Run the downloaded installer.
+
+4. Choose the "Developer Default" or "Custom" option as needed.
+
+5. Proceed through the steps, accepting the terms and allowing the installer to download and install the components.
+
+6. Set a password for the root user during the configuration.
+
+7. Complete the installation and make sure the MySQL service is running.
+
+8. To access MySQL:
+
+	* Open the MySQL Command Line Client
+
+	* Or use MySQL Workbench for a graphical interface
+
+9. Done! MySQL is now installed on your Windows system.
