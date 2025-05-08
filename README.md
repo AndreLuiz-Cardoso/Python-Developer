@@ -15,6 +15,7 @@ Each project focuses on solving real-world problems using clean, modular Python 
 | Project                             | Description                                                                 | Technologies                                  |
 | ----------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------- |
 | [`Box Subtitler`](./box_subtitler/) | Generate `.srt` subtitles from videos or audio using Whisper and Streamlit. | Python, Streamlit, OpenAI API, Pydub, Whisper |
+| [`Hashzap`](./Hashzap/)	            | Real-time live chat with Flask and WebSockets, inspired by WhatsApp.        | Python, Flask, Socket.IO, HTML/CSS/JS, jQuery |
 | _(More coming soon...)_             | CLI tools, task automations, file processors, etc.                          | pandas, numpy, tqdm, dotenv, and more         |
 
 ---
