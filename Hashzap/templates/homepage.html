@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hashzap</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js" integrity="sha512-luMnTJZ7oEchNDZAtQhgjomP1eZefnl82ruTH/3Oj/Yu5qYtwL7+dVRccACS/Snp1lFXq188XFipHKYE75IaQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    
+        <h1>Hashzap</h1>
+ 
+    <div id="messenger_list">
+    </div>
+
+    <input type="text" id="User" placeholder="User" required>
+    <input type="text" id="messenger" placeholder="messenger" required>
+   
+    <button id="button">Send</button>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            /*Connect the tunnel*/
+            var socket = io("localhost:5000");
+            socket.on("connect", function(){
+                console.log("user connected");
+            });
+            /*Create a new paragraph */
+            socket.on("message", function(data) {
+                console.log("message sent");
+                $("#messenger_list").append($("<p>").text(data));
+            })
+            /* When click at button, will call the message */
+            $("#button").on("click", function(){
+                console.log("button clicked");
+                socket.send($("#User").val() + ":" + $("#messenger").val());
+                $("#messenger").val("");
+           });
+        })
+    </script>
+</body>
+</html>
