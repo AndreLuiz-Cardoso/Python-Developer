@@ -123,33 +123,33 @@ python agente/scripts/terminal_agent.py
 
 ### 🔐 App Home with Settings Panel
 > Configure your API and database connection through a secure sidebar.
-![Home](assets/01-Home.png)
+![Home](img/01-Home.png)
 
 ---
 
 ### 🧾 Basic Natural Language Query
 > Example: **"Show all names with letter A"**  
 > Returns filtered SQL using `LIKE`.
-![Consulta 1](assets/02-Name-A.png)
+![Consulta 1](img/02-Name-A.png)
 
 ---
 
 ### 🧠 Advanced Query with JOIN and Aggregation
 > Example: **"Top 5 clients who made the largest deposits"**  
 > Demonstrates `JOIN`, `GROUP BY`, `SUM`, and `LIMIT`.
-![Consulta 2](assets/03-TopDeposits.png)
+![Consulta 2](img/03-TopDeposits.png)
 
 ---
 
 ### 👁️ SQL Visibility Option
 > Toggle to inspect the generated SQL query.
-![Consulta 3](assets/04-ShowSQLToggle.png)
+![Consulta 3](img/04-ShowSQLToggle.png)
 
 ---
 
 ### 🧬 Architecture
 > Diagram showing how the system integrates OpenAI, Streamlit, and MySQL.
-![Architecture](assets/Architecture.png)
+![Architecture](img/Architecture.png)
 
 ---
 
